@@ -38,6 +38,7 @@ ICON_META_FILE        = os.path.join(CURRENT_DIR, 'icon_paths.txt')   # preset f
 ERROR_IMG_FILE        = os.path.join(CURRENT_DIR, 'tab_icons/error.png')  # image for error message
 HISTORY_FILE          = os.path.join(CURRENT_DIR, 'history/history.txt')   # history data file
 TEX2IM_CMD            = os.path.join(CURRENT_DIR,'tex2im/tex2im')  # tex2im exe path
+TEX2IM_CMD            = 'bash %s' %TEX2IM_CMD
 DEMO_IMG              = os.path.join(CURRENT_DIR,'tab_icons/demo.png') # demo img
 
 
