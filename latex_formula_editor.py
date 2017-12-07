@@ -303,6 +303,9 @@ class MainFrame(QtWidgets.QWidget):
     def thumbnail_btn_click(self):
         icon_text,icon_img_path=self.thumbnail_btn_dict[self.sender()]
         self.text_box.insertPlainText(icon_text)
+        self.text_box.setFocus()
+        self.text_box.insertPlainText(' ')
+        self.text_box.setFocus()
 
     def tab_btn_click(self):
         idx=self.tab_btn_dict[self.sender()]
