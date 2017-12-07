@@ -26,11 +26,9 @@ Developed and tested in Linux. Might work in Mac.
 
 ## Usage
 
-Download this repo and save to local dist.
-
-Unzip it.
-
-Run `python latex_formula_editor.py`
+1. Download this repo and save it to local disk.
+2. Unzip it and change into its directory. 
+3. Run `python latex_formula_editor.py`
 
 
 ## Related projects
