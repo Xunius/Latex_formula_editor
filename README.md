@@ -9,6 +9,12 @@ reminder to the obscure or unfamiliar Latex codes when composing without quick a
 
 * Converts LaTex formula to png image file with control of image resolution.
 
+## Screenshots
+
+![Screenshot 1](https://github.com/Xunius/Latex_formula_editor/blob/master/Screenshot_1.png)
+
+![Screenshot 2](https://github.com/Xunius/Latex_formula_editor/blob/master/Screenshot_2.png)
+
 ## Platform/OS
 
 Developed and tested in Linux. Might work in Mac.
@@ -18,7 +24,17 @@ Developed and tested in Linux. Might work in Mac.
 * Python 2 or 3
 * latex (`texlive-core` and `texlive-latexextra` packages)
 
+## Usage
+
+Download this repo and save to local dist.
+
+Unzip it.
+
+Run `python latex_formula_editor.py`
+
+
 ## Related projects
 
-This project incorporates with minor moderation of the project of [tex2im](http://www.nought.de/tex2im.php), which provides the LaTeX image
-rendering functionality.
+This project incorporates with minor moderation of the project of [tex2im](http://www.nought.de/tex2im.php), which provides the LaTeX image rendering functionality. The files of *tex2im* can be found in the subfolder with same name.
+
+
