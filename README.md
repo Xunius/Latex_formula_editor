@@ -22,17 +22,19 @@ Developed and tested in Linux. Might work in Mac.
 ## Dependencies
 
 * Python 2 or 3
+* PyQt5 (python module)
 * latex (`texlive-core` and `texlive-latexextra` packages)
+* convert (part of the ImageMagick suite)
 
 ## Usage
 
-1. Download this repo and save it to local disk.
-2. Unzip it and change into its directory. 
+1. Download the zip file and unzip it to local disk.
+2. Change into its directory. 
 3. Run `python latex_formula_editor.py`
 
 
 ## Related projects
 
-This project incorporates with minor moderation of the project of [tex2im](http://www.nought.de/tex2im.php), which provides the LaTeX image rendering functionality. The files of *tex2im* can be found in the subfolder with same name.
+This project incorporates with minor changes of [tex2im](http://www.nought.de/tex2im.php), which provides the LaTeX image rendering functionality. The files of *tex2im* can be found in the subfolder with same name.
 
 
