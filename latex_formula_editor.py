@@ -481,7 +481,12 @@ class MainFrame(QtWidgets.QWidget):
             filename=QtWidgets.QFileDialog.getSaveFileName(self, 'Save Image',
                     os.getenv('HOME'),'*.png')
             if len(filename[0])>0:
-                self.img_pixmap.save(filename[0])
+                dirpath,filename=os.path.split(filename[0])
+                basename,ext=os.path.splitext(filename)
+                if len(ext)==0:
+                    filename='%s.png' %basename
+                targetpath=os.path.join(dirpath,filename)
+                self.img_pixmap.save(targetpath)
 
     def img_addfav_btn_click(self):
         if self.img_label.pixmap() is not None and\
