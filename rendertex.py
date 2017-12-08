@@ -16,6 +16,7 @@ RESO=[200,200]
 CURRENT_DIR     = os.path.dirname(os.path.abspath(__file__))
 RELATIVE_OUTDIR = 'tab_icons'
 TEX2IM_CMD      = os.path.join(CURRENT_DIR,'tex2im/tex2im')
+TEX2IM_CMD      = 'bash %s' %TEX2IM_CMD
 OUTPUTDIR       = os.path.join(CURRENT_DIR,RELATIVE_OUTDIR)
 ICON_META_FILE  = os.path.join(CURRENT_DIR,'icon_paths.txt')
 
