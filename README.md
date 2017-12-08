@@ -13,7 +13,6 @@ reminder to the obscure or unfamiliar Latex codes when composing without quick a
 
 ![Screenshot 1](https://github.com/Xunius/Latex_formula_editor/blob/master/Screenshot_1.png)
 
-![Screenshot 2](https://github.com/Xunius/Latex_formula_editor/blob/master/Screenshot_2.png)
 
 ## Platform/OS
 
