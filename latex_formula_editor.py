@@ -38,7 +38,6 @@ ICON_META_FILE        = os.path.join(CURRENT_DIR, 'icon_paths.txt')   # preset f
 ERROR_IMG_FILE        = os.path.join(CURRENT_DIR, 'tab_icons/error.png')  # image for error message
 HISTORY_FILE          = os.path.join(CURRENT_DIR, 'history/history.txt')   # history data file
 TEX2IM_CMD            = os.path.join(CURRENT_DIR,'tex2im/tex2im')  # tex2im exe path
-TEX2IM_CMD            = 'bash %s' %TEX2IM_CMD
 DEMO_IMG              = os.path.join(CURRENT_DIR,'tab_icons/demo.png') # demo img
 
 
@@ -302,10 +301,8 @@ class MainFrame(QtWidgets.QWidget):
     #---------Preset frame button click funcs---------
     def thumbnail_btn_click(self):
         icon_text,icon_img_path=self.thumbnail_btn_dict[self.sender()]
+        self.text_box.setFontPointSize(TEXT_EDIT_FONT)
         self.text_box.insertPlainText(icon_text)
-        self.text_box.setFocus()
-        self.text_box.insertPlainText(' ')
-        self.text_box.setFocus()
 
     def tab_btn_click(self):
         idx=self.tab_btn_dict[self.sender()]
@@ -481,12 +478,7 @@ class MainFrame(QtWidgets.QWidget):
             filename=QtWidgets.QFileDialog.getSaveFileName(self, 'Save Image',
                     os.getenv('HOME'),'*.png')
             if len(filename[0])>0:
-                dirpath,filename=os.path.split(filename[0])
-                basename,ext=os.path.splitext(filename)
-                if len(ext)==0:
-                    filename='%s.png' %basename
-                targetpath=os.path.join(dirpath,filename)
-                self.img_pixmap.save(targetpath)
+                self.img_pixmap.save(filename[0])
 
     def img_addfav_btn_click(self):
         if self.img_label.pixmap() is not None and\
@@ -636,6 +628,7 @@ class MainFrame(QtWidgets.QWidget):
             self.img_pixmap=QPixmap(tmp_img_file)
             self.img_label.setPixmap(self.img_pixmap)
             self.img_file_path=tmp_img_file
+            self.img_copy_button.setEnabled(True)
             self.img_save_button.setEnabled(True)
             self.img_addfav_button.setEnabled(True)
 
