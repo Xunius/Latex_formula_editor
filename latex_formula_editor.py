@@ -13,7 +13,7 @@ TODO: add status bar and output info as "copied to clipboard", "save fav".
 import sys,os,shutil
 import math
 from PyQt5 import QtWidgets, QtCore
-from PyQt5.QtGui import QPixmap, QIcon
+from PyQt5.QtGui import QPixmap, QIcon, QFont
 import tempfile
 import subprocess
 import cPickle
@@ -347,7 +347,10 @@ class MainFrame(QtWidgets.QWidget):
 
         #------------------Add text edit------------------
         self.text_box=QtWidgets.QTextEdit()
-        self.text_box.setFontPointSize(TEXT_EDIT_FONT)
+        font=QFont()
+        font.setPointSize(TEXT_EDIT_FONT)
+        #self.text_box.setFontPointSize(TEXT_EDIT_FONT)
+        self.text_box.setFont(font)
         self.text_box.setText(DEMO_FORMULA)
         v_layout.addWidget(self.text_box)
 
