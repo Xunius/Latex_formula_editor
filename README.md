@@ -30,7 +30,8 @@ Developed and tested in Linux. Might work in Mac.
 
 1. Download the zip file and unzip it to local disk.
 2. Change into its directory. 
-3. Run `python latex_formula_editor.py`
+3. Make tex2im executable: `chmod +x ./tex2im/tex2im`.
+4. Run `python latex_formula_editor.py`
 
 
 ## Related projects
