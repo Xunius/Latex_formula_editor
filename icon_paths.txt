@@ -1371,86 +1371,86 @@ a(lp830
 (lp831
 S'\\left(\\begin{matrix}\na_{11} & a_{12} \\\\\na_{21} & a_{22}\n\\end{matrix}\\right.\n'
 p832
-aS'/home/guangzhi/codes/Latex_formula_editor-master/tab_icons/tab_matrix/01.png'
+aS'tab_icons/tab_matrix/01.png'
 p833
 aa(lp834
 S'\\left[\\begin{matrix}\na_{11} & a_{12} \\\\\na_{21} & a_{22}\n\\end{matrix}\\right.\n'
 p835
-aS'/home/guangzhi/codes/Latex_formula_editor-master/tab_icons/tab_matrix/02.png'
+aS'tab_icons/tab_matrix/02.png'
 p836
 aa(lp837
 S'\\left\\{\\begin{matrix}\na_{11} & a_{12} \\\\\na_{21} & a_{22}\n\\end{matrix}\\right.\n'
 p838
-aS'/home/guangzhi/codes/Latex_formula_editor-master/tab_icons/tab_matrix/03.png'
+aS'tab_icons/tab_matrix/03.png'
 p839
 aa(lp840
 S'\\left<\\begin{matrix}\na_{11} & a_{12} \\\\\na_{21} & a_{22}\n\\end{matrix}\\right.\n'
 p841
-aS'/home/guangzhi/codes/Latex_formula_editor-master/tab_icons/tab_matrix/04.png'
+aS'tab_icons/tab_matrix/04.png'
 p842
 aa(lp843
 S'\\left|\\begin{matrix}\na_{11} & a_{12} \\\\\na_{21} & a_{22}\n\\end{matrix}\\right.\n'
 p844
-aS'/home/guangzhi/codes/Latex_formula_editor-master/tab_icons/tab_matrix/05.png'
+aS'tab_icons/tab_matrix/05.png'
 p845
 aa(lp846
 S'\\left.\\begin{matrix}\na_{11} & a_{12} \\\\\na_{21} & a_{22}\n\\end{matrix}\\right)\n'
 p847
-aS'/home/guangzhi/codes/Latex_formula_editor-master/tab_icons/tab_matrix/06.png'
+aS'tab_icons/tab_matrix/06.png'
 p848
 aa(lp849
 S'\\left.\\begin{matrix}\na_{11} & a_{12} \\\\\na_{21} & a_{22}\n\\end{matrix}\\right]\n'
 p850
-aS'/home/guangzhi/codes/Latex_formula_editor-master/tab_icons/tab_matrix/07.png'
+aS'tab_icons/tab_matrix/07.png'
 p851
 aa(lp852
 S'\\left.\\begin{matrix}\na_{11} & a_{12} \\\\\na_{21} & a_{22}\n\\end{matrix}\\right\\}\n'
 p853
-aS'/home/guangzhi/codes/Latex_formula_editor-master/tab_icons/tab_matrix/08.png'
+aS'tab_icons/tab_matrix/08.png'
 p854
 aa(lp855
 S'\\left.\\begin{matrix}\na_{11} & a_{12} \\\\\na_{21} & a_{22}\n\\end{matrix}\\right>\n'
 p856
-aS'/home/guangzhi/codes/Latex_formula_editor-master/tab_icons/tab_matrix/09.png'
+aS'tab_icons/tab_matrix/09.png'
 p857
 aa(lp858
 S'\\left.\\begin{matrix}\na_{11} & a_{12} \\\\\na_{21} & a_{22}\n\\end{matrix}\\right|\n'
 p859
-aS'/home/guangzhi/codes/Latex_formula_editor-master/tab_icons/tab_matrix/10.png'
+aS'tab_icons/tab_matrix/10.png'
 p860
 aa(lp861
 S'\\begin{matrix}\na_{11} & a_{12} \\\\\na_{21} & a_{22}\n\\end{matrix}\n'
 p862
-aS'/home/guangzhi/codes/Latex_formula_editor-master/tab_icons/tab_matrix/11.png'
+aS'tab_icons/tab_matrix/11.png'
 p863
 aa(lp864
 S'\\begin{bmatrix}\na_{11} & a_{12} \\\\\na_{21} & a_{22}\n\\end{bmatrix}\n'
 p865
-aS'/home/guangzhi/codes/Latex_formula_editor-master/tab_icons/tab_matrix/12.png'
+aS'tab_icons/tab_matrix/12.png'
 p866
 aa(lp867
 S'\\begin{pmatrix}\na_{11} & a_{12} \\\\\na_{21} & a_{22}\n\\end{pmatrix}\n'
 p868
-aS'/home/guangzhi/codes/Latex_formula_editor-master/tab_icons/tab_matrix/13.png'
+aS'tab_icons/tab_matrix/13.png'
 p869
 aa(lp870
 S'\\begin{vmatrix}\na_{11} & a_{12} \\\\\na_{21} & a_{22}\n\\end{vmatrix}\n'
 p871
-aS'/home/guangzhi/codes/Latex_formula_editor-master/tab_icons/tab_matrix/14.png'
+aS'tab_icons/tab_matrix/14.png'
 p872
 aa(lp873
 S'\\begin{Bmatrix}\na_{11} & a_{12} \\\\\na_{21} & a_{22}\n\\end{Bmatrix}\n'
 p874
-aS'/home/guangzhi/codes/Latex_formula_editor-master/tab_icons/tab_matrix/15.png'
+aS'tab_icons/tab_matrix/15.png'
 p875
 aa(lp876
 S'\\begin{Vmatrix}\na_{11} & a_{12} \\\\\na_{21} & a_{22}\n\\end{Vmatrix}\n'
 p877
-aS'/home/guangzhi/codes/Latex_formula_editor-master/tab_icons/tab_matrix/16.png'
+aS'tab_icons/tab_matrix/16.png'
 p878
 aa(lp879
 S'\\begin{cases}\n y_0 & \\text{ if } x_0 \\\\\n y_1 & \\text{ if } x_1\n\\end{cases}\n'
 p880
-aS'/home/guangzhi/codes/Latex_formula_editor-master/tab_icons/tab_matrix/17.png'
+aS'tab_icons/tab_matrix/17.png'
 p881
 aaaa.
