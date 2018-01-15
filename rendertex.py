@@ -76,7 +76,8 @@ def renderList(text_list,subdir,outdir):
 
 
 #-----------------Render a matrix-----------------
-def renderMatrix(nrow,ncol,matrix_type,bracket_str,add_dummy,outfile):
+def renderMatrix(nrow,ncol,matrix_type,bracket_str,add_dummy,
+        filename,subdir,outdir):
 
     assert matrix_type in ['left','right','cases','matrix','bmatrix',
             'pmatrix','vmatrix','Bmatrix','Vmatrix'],\
@@ -93,10 +94,17 @@ def renderMatrix(nrow,ncol,matrix_type,bracket_str,add_dummy,outfile):
     else:
         tex_str=texformulas.getDoubleMatrix(nrow,ncol,matrix_type,add_dummy)
 
+    #-----------Get file path for saving img-----------
+    outfile=os.path.join(outdir,filename)
+    outfile=os.path.expanduser(outfile)
+    #--------------Get relative file path--------------
+    relative_path=os.path.join(RELATIVE_OUTDIR,subdir)
+    relative_path=os.path.join(relative_path,filename)
+
     try:
         rec=renderFormula(tex_str,outfile)
         if rec==0:
-            return_list.append([tex_str,outfile])
+            return_list.append([tex_str,relative_path])
         else:
             return_list.append([])
     except:
@@ -176,10 +184,12 @@ if __name__=='__main__':
 
     matrix_icon_meta_list=[]
     for ii,mii in enumerate(MATRIX_LISTS):
+        subdir='tab_matrix'
+        outdirii=os.path.join(OUTPUTDIR,subdir)
+
         fileii=str(ii+1).rjust(len(str(len(MATRIX_LISTS))),'0')+'.png'
-        outfileii=os.path.join(outdirii,fileii)
-        print 'save matrix img',outfileii
-        argsii=mii+(outfileii,)
+        print 'save matrix img'
+        argsii=mii+(fileii,subdir,outdirii)
 
         try:
             meta_listii=renderMatrix(*argsii)
