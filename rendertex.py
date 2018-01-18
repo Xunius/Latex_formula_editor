@@ -9,7 +9,7 @@ import os
 import subprocess
 import tempfile
 import texformulas
-import cPickle
+import json
 
 RESO=[200,200]
 
@@ -199,7 +199,7 @@ if __name__=='__main__':
 
     icon_meta_list.append(['Matrix',matrix_icon_meta_list])
     with open(ICON_META_FILE,'w') as fout:
-        cPickle.dump(icon_meta_list,fout)
+        json.dump(icon_meta_list,fout)
 
 
 

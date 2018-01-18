@@ -1,3 +1,5 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
 '''A LaTeX formulae reference and editting tool.
 
 
@@ -16,7 +18,7 @@ from PyQt5 import QtWidgets, QtCore
 from PyQt5.QtGui import QPixmap, QIcon, QFont
 import tempfile
 import subprocess
-import cPickle
+import json
 
 #---------------------Globals---------------------
 __version__='v0.1'
@@ -163,7 +165,7 @@ class MainFrame(QtWidgets.QWidget):
             self.has_hist=True
 
             with open(history_file_path,'r') as fin:
-                data_dict=cPickle.load(fin)
+                data_dict=json.load(fin)
 
                 hist=[]
                 if 'history_data' in data_dict:
@@ -798,12 +800,12 @@ class MainWindow(QtWidgets.QMainWindow):
 
             data_dict['history_data']=hist_data
 
-        #-------------Pickle dump history data-------------
+        #------------- Dump history data-------------
         history_file=os.path.join(history_folder,'history.txt')
 
         if len(data_dict)>0:
             with open(history_file,'w') as fout:
-                cPickle.dump(data_dict,fout)
+                json.dump(data_dict,fout)
 
 
 
@@ -815,7 +817,7 @@ if __name__=='__main__':
 
     #------------------Read icon info------------------
     with open(ICON_META_FILE,'r') as fin:
-        thumbnail_meta_list=cPickle.load(fin)
+        thumbnail_meta_list=json.load(fin)
 
     app=QtWidgets.QApplication(sys.argv)
     mainwindow=MainWindow(thumbnail_meta_list)
