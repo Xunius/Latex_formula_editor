@@ -210,6 +210,9 @@ class MainFrame(QtWidgets.QWidget):
 
         for posii,thumbnailii in zip(positions,thumbnail_list):
             icon_textii,icon_img_pathii=thumbnailii
+            # need to prepend CURRENT_DIR, otherwise icons won't show when
+            # running from outside of code folder
+            icon_img_pathii=os.path.join(CURRENT_DIR, icon_img_pathii)
             buttonii=QtWidgets.QToolButton(self)
             buttonii.setIcon(QIcon(icon_img_pathii))
             buttonii.setIconSize(QtCore.QSize(icon_size,icon_size))
@@ -743,7 +746,7 @@ class MainFrame(QtWidgets.QWidget):
 
         #-------------------Add 3rd row-------------------
         v_layout0.addWidget(self.getHistoryFrame())
-        
+
 
         self.show()
 
