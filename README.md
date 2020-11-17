@@ -29,9 +29,56 @@ Developed and tested in Linux. Might work in Mac.
 ## Usage
 
 1. Download the zip file and unzip it to local disk.
-2. Change into its directory. 
+2. Change into its directory.
 3. Make tex2im executable: `chmod +x ./tex2im/tex2im`.
 4. Run `python latex_formula_editor.py`
+
+## Trouble-shooting
+
+### "Failed to render image. Please re-check your formula" error
+
+**Issue**
+After typing in the formula and hitting "Render", an error message of
+*"Failed to render image. Please re-check your formula"* appears below.
+
+**Solution**
+
+Please make sure `texlive-core` and `texlive-latexextra` are installed and working.
+Then make sure the `tex2im/tex2im` file has execution permission.
+If the error still persists, check out the problem below.
+
+### convert: attempt to perform an operation not allowed by the security policy `gs'
+
+**Issue**
+
+After typing in the formula and hitting "Render", an error message of
+*"Failed to render image. Please re-check your formula"* appears below.
+`texlive-core` and `texlive-latexextra` are both installed and working, and
+`tex2im` has execution permission.
+
+**Solution**
+
+Open up a terminal and `cd` into the `tex2im` folder, run the following test command:
+
+```
+tex2im "\sum_{i=0}^5 x_i^2"
+```
+
+If this error message is printed out:
+
+```
+convert: attempt to perform an operation not allowed by the security policy `gs' @ error/delegate.c/ExternalDelegateCommand/378.
+```
+
+Then this is a problem related to `ImageMagic`. See [this stackoverflow post](https://stackoverflow.com/questions/52998331/imagemagick-security-policy-pdf-blocking-conversion) for more information.
+
+Personally I use an arch-based Linux OS, and this fix worked for me:
+
+Edit the `/etc/imagemagic-7/policy.xml` file, and comment out this line:
+
+```
+<policy domain="delegate" rights="none" pattern="gs" />
+```
 
 
 ## Related projects
