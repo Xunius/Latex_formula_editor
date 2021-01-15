@@ -74,7 +74,7 @@ Then this is a problem related to `ImageMagic`. See [this stackoverflow post](ht
 
 Personally I use an arch-based Linux OS, and this fix worked for me:
 
-Edit the `/etc/imagemagic-7/policy.xml` file, and comment out this line:
+Edit the `/etc/Imagemagic-7/policy.xml` file, and comment out this line:
 
 ```
 <policy domain="delegate" rights="none" pattern="gs" />
